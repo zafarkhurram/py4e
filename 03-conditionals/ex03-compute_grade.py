@@ -7,7 +7,7 @@ try:
     score = float(score)
 
     if score < 0 or score > 1.0:
-        raise error
+        raise AttributeError
     elif score >= 0.9:
         print("A")
     elif score >= 0.8:
@@ -18,5 +18,7 @@ try:
         print("D")
     else:
         print("F")
-except:
+except ValueError:
     print("Bad score")
+except AttributeError:
+    print("Bad score - should be between 0.0 and 1.0")

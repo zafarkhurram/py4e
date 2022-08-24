@@ -13,5 +13,5 @@ try:
         pay = hours * rate
 
     print("Pay", pay)
-except:
+except ValueError:
     print("Error, please enter numeric input")
