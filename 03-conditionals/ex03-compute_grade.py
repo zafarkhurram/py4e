@@ -1,6 +1,3 @@
-from distutils.log import error
-
-
 score = input("Enter score: ")
 
 try:
